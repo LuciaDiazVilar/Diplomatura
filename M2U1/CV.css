@@ -1,0 +1,24 @@
+/*
+font-family: 'Sacramento', cursive;
+font-family: 'Ysabeau', sans-serif;
+*/
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    ;
+    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    padding-top: 10px;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.caja {
+    height: 80px;
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 400px;
+}
+h1{ 
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+}
