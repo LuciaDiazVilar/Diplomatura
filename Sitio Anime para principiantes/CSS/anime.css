@@ -1,0 +1,58 @@
+/*
+font-family: 'Ysabeau', sans-serif;
+*/
+body {
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-image: url(../Imagenes/BG.jpeg);
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 16px 0;
+    height: 150px;
+    margin: 0%;
+
+}
+
+header h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 70px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: cornflowerblue;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: aliceblue;
+    padding:  3px 6px;
+    display: block;
+    text-align: center;
+}
+nav ul li a.activo {
+    background-color: deepskyblue;
+}
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
