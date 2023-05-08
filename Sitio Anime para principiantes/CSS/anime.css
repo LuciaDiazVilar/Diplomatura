@@ -7,8 +7,7 @@ body {
     line-height: 20px;
     background-image: url(../Imagenes/BG.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: 100%;
 }
 
 header {
