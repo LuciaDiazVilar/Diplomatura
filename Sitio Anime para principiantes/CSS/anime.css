@@ -7,10 +7,12 @@ body {
     line-height: 20px;
     background-image: url(../Imagenes/BG.jpeg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
-    background-color: antiquewhite;
+    background-color: #f0ffff;
     padding: 16px 0;
     height: 150px;
     margin: 0%;
@@ -21,6 +23,7 @@ header h1 {
     color: black;
     font-size: 40px;
     font-weight: 100;
+    align-items: center;
     display: inline-block;
     position: relative;
     bottom: 70px;
@@ -28,7 +31,7 @@ header h1 {
 }
 
 nav {
-    background-color: cornflowerblue;
+    background-color: #d5f1f1;
     margin-bottom: 20px;
 }
 
@@ -44,15 +47,79 @@ nav ul li {
 }
 
 nav ul li a {
-    color: aliceblue;
-    padding:  3px 6px;
+    color: black;
+    padding: 3px 6px;
     display: block;
     text-align: center;
 }
+
 nav ul li a.activo {
-    background-color: deepskyblue;
+    background-color: #22c08b;
 }
+
+footer {
+    font-size: small;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0%;
+
+}
+
 .holder {
     max-width: 960px;
     margin: 0 auto;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.dibujo {
+    display: flex;
+}
+
+.ListaDeGeneros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genero {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.genero img {
+    max-width: 60%;
+    border-radius: 5px;
+}
+
+.genero h5 {
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+.genero p {
+    font-size: 13px;
 }
