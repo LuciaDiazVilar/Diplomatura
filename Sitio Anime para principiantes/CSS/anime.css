@@ -7,7 +7,7 @@ body {
     line-height: 20px;
     background-image: url(../Imagenes/BG.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 header {
@@ -121,4 +121,27 @@ h2 {
 
 .genero p {
     font-size: 13px;
+}
+
+.serieopelicula{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32;
+    align-items: center;
+}
+.serieopelicula .info h4{
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+.serieopelicula img{
+    border-radius: 13px;
+    display: block;
+    max-width: 100px;
+    padding: 10px;
 }
