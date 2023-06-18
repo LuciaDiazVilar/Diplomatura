@@ -9,11 +9,11 @@ import GenerosPage from "./pages/GenerosPage";
 import HomePage from "./pages/HomePage";
 import PeliculasPage from "./pages/PeliculasPage"
 import SeriesPage from "./pages/SeriesPage";
-
+import Body from"./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className = "App" style={Body}>
       <Header />
 
       <BrowserRouter>

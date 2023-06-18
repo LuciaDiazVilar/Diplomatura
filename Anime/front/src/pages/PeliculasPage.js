@@ -1,3 +1,4 @@
+import '../styles/components/pages/PeliculasPage.css';
 import React from 'react';
 const PeliculasPage = (props) => {
     return (

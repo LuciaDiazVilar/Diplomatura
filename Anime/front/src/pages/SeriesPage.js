@@ -1,3 +1,4 @@
+import '../styles/components/pages/SeriesPage.css';
 import React from 'react';
 const SeriesPage = (props) => {
     return (

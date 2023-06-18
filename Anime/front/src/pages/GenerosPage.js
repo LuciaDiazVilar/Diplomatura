@@ -1,3 +1,4 @@
+import '../styles/components/pages/GenerosPage.css';
 import React from 'react';
 const GenerosPage = (props) => {
     return (
