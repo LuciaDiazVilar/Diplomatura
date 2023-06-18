@@ -1,0 +1,28 @@
+.ListaDeGeneros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genero {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.genero img {
+    max-width: 60%;
+    border-radius: 5px;
+}
+
+.genero h5 {
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+.genero p {
+    font-size: 13px;
+}

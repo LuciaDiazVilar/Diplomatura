@@ -1,0 +1,28 @@
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.dibujo {
+    display: flex;
+}
