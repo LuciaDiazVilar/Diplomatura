@@ -1,0 +1,40 @@
+
+body{
+  margin: 0;
+  padding:0;
+}
+header {
+  background-color: #f0ffff;
+  padding: 16px 0;
+  height: 150px;
+  margin: 0%;
+
+}
+
+header h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 100;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  bottom: 70px;
+  margin-left: 10px;
+  text-align: flex;
+}
+footer {
+  font-size: small;
+  clear: both;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 0%;
+
+}
+body {
+  font-family: 'Ysabeau', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-image: url(../public/Imagenes/BG.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
