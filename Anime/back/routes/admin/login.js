@@ -36,4 +36,23 @@ router.post('/', async (req, res, next) => {
   }
 })
 
+router.post('/admin/login', async (req, res, next) => {
+  try {
+    var usuario = req.body.usuario;
+    var password = req.body.password;
+    var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password)
+    console.log('logeo')
+
+    if (data != undefined) {
+      res.status(201).body({message: "Logeo exitoso"})
+    } else {
+      res.status(401).body({message: "Usuario o contraseña invalido"})
+    }
+    res.status(201).body({message: "Logeo exitoso"})
+
+  } catch (error) {
+    console.log(error);
+  }
+})
+
 module.exports = router;

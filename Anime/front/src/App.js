@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import PeliculasPage from "./pages/PeliculasPage"
 import SeriesPage from "./pages/SeriesPage";
 import Body from"./App.css";
+import LoginPage from "./pages/login"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/series" element={<SeriesPage />} />
           <Route path="/peliculas" element={<PeliculasPage />} />
           <Route path="/contactos" element={<ContactosPage />} />
+          <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
     <Footer />

@@ -1,0 +1,19 @@
+.formulariologin{
+    display: flex;
+}
+.formulariologin input,
+.formulariologin label{
+    min-width: 100px;
+}
+.formulariologin input[type="submit"] {
+    background: #d5f1f1;
+    color: black;
+    font-size:  16px;
+    padding:  6px 20px;
+    width: auto;
+    position: relative;
+    left: 523px;
+}
+.formulariologin input[type="submit"]:hover {
+    background-color: #22c08b;
+}
