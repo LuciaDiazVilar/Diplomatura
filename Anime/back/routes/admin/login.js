@@ -9,42 +9,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/logout', function (req, res, next){
-  req.session.destroy();
-  res.render('admin/login', {
-    layout: 'admin/layoout'
-  });
-});
-
-router.post('/', async (req, res, next) => {
-  try {
-    console.log(req.body)
-    var usuario = req.body.usuario;
-    var password = req.body.contraseña;
-    return await usuariosModel.getUserByUsernameAndPassword(usuario, password).then(data =>{
-    console.log('logeo /')
-    console.log(data)
-    if (data != undefined) {
-      res.status(200)
-      res.body={
-        
-        "Message": "Bienvenido"
-      }
-      res.send()
-    } else {
-      res.status(401)
-      res.body={
-        "Message": "No pudo acceder"
-      }
-      res.send()
-    }})
-
-  } catch (error) {
-    console.log(error);
-  }
-})
-
-
 
 
 router.post('/login', async (req, res, next) => {
