@@ -7,7 +7,7 @@ const ContactosPage = (props) => {
             <h2>¡Contactanos!</h2>
             <form action="" method="" class="formulario">
                 <p>
-                    <label for="nomvre">Nombre</label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" name=""/>
                 </p>
                 <p>

@@ -9,7 +9,6 @@ const LoginPage = (props) => {
     contraseña: ''
   }
   const [sending, setSending] = useState(false);
-  const [msg, setMsg] = useState ('Procesando');
   const [formData, setFormData] = useState(initialForm);
 
   const handleChange = e => {
@@ -22,38 +21,40 @@ const LoginPage = (props) => {
 
   const handleSubmit = async e=> {
     e.preventDefault();
-    setMsg ('');
+    console.log('HandleSubmit: ', formData)
     setSending(true)
+
     const response = await
-    axios.post('http://localhost:3000/admin/login', formData);
+    axios.post({
+      url:'/login',
+      data:formData
+    });
     setSending(false);
-    setMsg (response.data.menssage);
+  
+  
     if (response.data.error === false){
       setFormData(initialForm)
     }
-
   }
 
   return (
     <main class="holder">
       <div class="container">
-        <div class="row">
-          <form action="/login" method="post" class='formulariologin'>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="inputUser" placeholder="usuario" name="usuario"/>
-                <label for="floatingInput">Usuario</label>
-            </div>
-            <div class="form-floating">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="password"/>
-                <label for="floatingPassword">Contraseña</label>
-            </div>
-            <div>
-              <button type="submit" class="btn btn-primary">Ingresar
+          <form action="/login" method="post" class='formulariologin' onSubmit={handleSubmit}>
+            <p>
+              <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario" value={formData.usuario} onChange={handleChange}/>
+                <label for="floatingInput"></label>
+            </p>
+            <p>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="contraseña" onChange={handleChange} />
+                <label for="floatingPassword"></label>
+            </p>
+            <p>
+              <button type="submit" class="btn btn-primary" >Ingresar
               </button>
-            </div>
+            </p>
           </form>
         </div>
-      </div>
       
     </main>
     )

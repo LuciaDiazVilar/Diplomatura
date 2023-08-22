@@ -1,11 +1,11 @@
 .formulariologin{
     display: flex;
 }
-.formulariologin input,
-.formulariologin label{
+.formulariologin p input,
+.formulariologin p label{
     min-width: 100px;
 }
-.formulariologin input[type="submit"] {
+.formulariologin p input[type="submit"] {
     background: #d5f1f1;
     color: black;
     font-size:  16px;
@@ -14,6 +14,6 @@
     position: relative;
     left: 523px;
 }
-.formulariologin input[type="submit"]:hover {
+.formulariologin p input[type="submit"]:hover {
     background-color: #22c08b;
 }
