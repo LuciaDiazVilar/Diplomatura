@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
     layout:'admin/layout'
   });
 });
-HEAD
+
 router.get('/logout', function (req, res, next){
   req.session.destroy();
   res.render('admin/login', {
