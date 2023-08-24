@@ -9,6 +9,7 @@ import GenerosPage from "./pages/GenerosPage";
 import HomePage from "./pages/HomePage";
 import PeliculasPage from "./pages/PeliculasPage"
 import SeriesPage from "./pages/SeriesPage";
+import NovedadesPage from "./pages/NovedadesPage";
 import Body from"./App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/generos" element={<GenerosPage />} />
           <Route path="/series" element={<SeriesPage />} />
           <Route path="/peliculas" element={<PeliculasPage />} />
+          <Route path="/novedades" element={<NovedadesPage />} />
           <Route path="/contactos" element={<ContactosPage />} />
       </Routes>
     </BrowserRouter>
